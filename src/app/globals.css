@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+  --font-display: var(--font-sora), system-ui, sans-serif;
+  
+  /* Robust Color Mapping for Tailwind v4 Utilities */
+  --color-primary: #3b82f6;      /* Electric Blue */
+  --color-secondary: #6366f1;    /* Deep Indigo */
+  --color-accent: #2dd4bf;       /* Vibrant Cyan */
+  --color-success: #10b981;      /* Emerald */
+  --color-brand-blue: #3b82f6;   /* Direct Brand Access */
+  
+  --color-background: #020617;
+  --color-card: #0f172a;
+  --color-border: rgba(255, 255, 255, 0.08);
+  
+  --radius-3xl: 1.5rem;
+  --radius-4xl: 2rem;
+
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #020617;
+  color: #f8fafc;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+/* --- High Aesthetic Utilities --- */
+
+.glass {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Glow Effects */
+.shadow-glow {
+  box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.5);
+}
+
+.shadow-glow-lg {
+  box-shadow: 0 0 50px -10px rgba(59, 130, 246, 0.4);
+}
+
+.text-glow {
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+/* Gradients */
+.bg-gradient-sapphire {
+  background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.25) 0%, transparent 45%),
+              radial-gradient(circle at bottom right, rgba(99, 102, 241, 0.2) 0%, transparent 45%);
+}
+
+.text-gradient-brand {
+  background: linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #3b82f6; /* Fallback */
+}
+
+/* Bento aesthetic */
+.bento-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2.5rem;
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.7);
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: #fff;
+}
