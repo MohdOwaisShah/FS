@@ -22,13 +22,13 @@ export default function Areas() {
   ];
 
   return (
-    <section id="areas" className="py-40 bg-slate-950 font-sans relative overflow-hidden">
+    <section id="areas" className="py-20 sm:py-40 bg-slate-950 font-sans relative overflow-hidden">
       {/* Background Mesh Elements */}
       <div className="absolute inset-0 bg-gradient-mesh opacity-20 pointer-events-none" />
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-secondary/10 blur-[150px] rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
           
           {/* Left: Info Grid */}
           <div className="lg:col-span-12 mb-10">
@@ -46,7 +46,7 @@ export default function Areas() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-5xl md:text-[6rem] font-black text-white font-display uppercase tracking-tight italic"
+                    className="text-4xl sm:text-5xl md:text-[6rem] font-black text-white font-display uppercase tracking-tight italic"
                   >
                     Coverage <span className="text-gradient-brand">Zone.</span>
                   </motion.h2>
@@ -55,7 +55,7 @@ export default function Areas() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-slate-400 font-medium max-w-sm text-lg md:text-xl italic border-l-2 border-primary/30 pl-8 leading-relaxed mb-4"
+                className="text-slate-400 font-medium max-w-sm text-base sm:text-lg md:text-xl italic border-l-2 border-primary/30 pl-6 sm:pl-8 leading-relaxed mb-4"
                >
                  Precision-timed pickups across the primary Mumbai infrastructure. Our unit reaches you within <span className="text-primary font-black uppercase">4 hours</span> of confirmation.
                </motion.p>
@@ -71,7 +71,7 @@ export default function Areas() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="bento-card p-10 group overflow-hidden bg-slate-900/40"
+                className="bento-card p-6 sm:p-10 group overflow-hidden bg-slate-900/40"
               >
                  <div className="flex items-start justify-between mb-10 relative z-10">
                     <div className="w-14 h-14 glass rounded-2xl flex items-center justify-center text-primary border-primary/20 group-hover:scale-110 group-hover:shadow-glow transition-all duration-500">
@@ -113,7 +113,7 @@ export default function Areas() {
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
                viewport={{ once: true }}
-               className="p-12 glass rounded-[3rem] border-primary/20 bg-slate-900/50 flex flex-col md:flex-row items-center gap-12 text-center md:text-left justify-between"
+               className="p-6 sm:p-12 glass rounded-[2rem] sm:rounded-[3rem] border-primary/20 bg-slate-900/50 flex flex-col md:flex-row items-center gap-8 sm:gap-12 text-center md:text-left justify-between"
              >
                 <div className="flex items-center gap-8">
                    <div className="w-20 h-20 glass-light rounded-[2rem] flex items-center justify-center text-primary border-primary/20 animate-pulse-slow">
@@ -124,8 +124,8 @@ export default function Areas() {
                       <p className="text-xs font-bold text-slate-500 uppercase tracking-[0.3em] mt-2">Extended support available for large orders.</p>
                    </div>
                 </div>
-                <div className="flex gap-4">
-                   <button className="px-12 py-5 bg-primary text-white font-black uppercase tracking-widest rounded-2xl hover:scale-105 transition-all shadow-glow">9136837381</button>
+                <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                   <button className="w-full sm:w-auto px-8 sm:px-12 py-4 sm:py-5 bg-primary text-white font-black uppercase tracking-widest rounded-xl sm:rounded-2xl hover:scale-105 transition-all shadow-glow">9136837381</button>
                    <div className="hidden lg:flex flex-col justify-center">
                       <p className="text-[10px] font-black text-white uppercase tracking-widest mb-1">Direct Hotline</p>
                       <p className="text-[9px] font-bold text-slate-500 uppercase tracking-widest">24/7 Response</p>

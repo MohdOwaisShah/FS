@@ -41,13 +41,13 @@ export default function BookingForm() {
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="glass rounded-[4rem] p-16 md:p-24 text-center shadow-glow-lg border-primary/20 bg-slate-900/40"
+            className="glass rounded-[2rem] sm:rounded-[4rem] p-8 sm:p-16 md:p-24 text-center shadow-glow-lg border-primary/20 bg-slate-900/40"
           >
             <div className="w-28 h-28 bg-primary rounded-[2.5rem] flex items-center justify-center mx-auto mb-12 text-white shadow-glow hover:scale-110 transition-transform">
               <CheckCircle2 className="w-14 h-14" />
             </div>
-            <h2 className="text-5xl md:text-6xl font-black text-white mb-8 font-display uppercase tracking-tighter italic leading-none">Status: Deployment!</h2>
-            <p className="text-slate-400 font-medium mb-14 text-xl leading-relaxed max-w-lg mx-auto italic border-l-2 border-primary/30 pl-8">Your specialized repair unit is being dispatched. A technician will contact you on <span className="text-primary font-black">WhatsApp/Call within 15 mins.</span></p>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 sm:mb-8 font-display uppercase tracking-tighter italic leading-none">Status: Deployment!</h2>
+            <p className="text-slate-400 font-medium mb-10 sm:mb-14 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg mx-auto italic border-l-2 border-primary/30 pl-6 sm:pl-8">Your specialized repair unit is being dispatched. A technician will contact you on <span className="text-primary font-black">WhatsApp/Call within 15 mins.</span></p>
             <button 
               onClick={() => setStatus('idle')}
               className="text-primary font-black uppercase tracking-[0.3em] text-xs hover:text-white transition-colors"
@@ -61,13 +61,13 @@ export default function BookingForm() {
   }
 
   return (
-    <section id="booking" className="py-40 bg-slate-950 font-sans relative overflow-hidden">
+    <section id="booking" className="py-20 sm:py-40 bg-slate-950 font-sans relative overflow-hidden">
       {/* Background sapphire glow */}
       <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-secondary/10 blur-[140px] rounded-full pointer-events-none" />
       <div className="absolute top-1/4 left-0 w-80 h-80 bg-primary/10 blur-[130px] rounded-full -translate-x-1/2 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-20 items-center">
           
           {/* Left: Content */}
           <div className="lg:col-span-5 space-y-12 text-center lg:text-left">
@@ -80,7 +80,7 @@ export default function BookingForm() {
               >
                 Service Portal v1.0
               </motion.div>
-              <h2 className="text-6xl md:text-[6.5rem] font-black text-white font-display leading-[0.85] uppercase tracking-tighter italic">
+              <h2 className="text-4xl sm:text-6xl md:text-[6.5rem] font-black text-white font-display leading-[0.85] uppercase tracking-tighter italic">
                 Book Your <br />
                 <span className="text-gradient-brand">Expert Pickup.</span>
               </h2>
@@ -113,7 +113,7 @@ export default function BookingForm() {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="glass rounded-[3.5rem] p-10 md:p-14 border-white/10 shadow-glow-lg bg-slate-900/50"
+              className="glass rounded-[2rem] sm:rounded-[3.5rem] p-6 sm:p-10 md:p-14 border-white/10 shadow-glow-lg bg-slate-900/50"
              >
                 <form onSubmit={handleSubmit} className="space-y-8">
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

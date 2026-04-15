@@ -11,12 +11,12 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-slate-950 pt-32 pb-12 font-sans relative overflow-hidden border-t border-white/5">
+    <footer className="bg-slate-950 pt-20 sm:pt-32 pb-12 font-sans relative overflow-hidden border-t border-white/5">
       {/* Background glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-primary/5 blur-[150px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-20 mb-12 sm:mb-24">
           
           {/* Brand Column */}
           <div className="space-y-10">
@@ -25,7 +25,7 @@ export default function Footer() {
                 FS
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-black tracking-tight text-white font-display uppercase italic leading-none">
+                <span className="text-xl sm:text-2xl font-black tracking-tight text-white font-display uppercase italic leading-none">
                   Final<span className="text-primary italic">Solution</span>
                 </span>
                 <span className="text-[10px] font-black text-primary/80 uppercase tracking-widest mt-2 px-1">Precision Lab 1.0</span>
@@ -86,7 +86,7 @@ export default function Footer() {
           {/* Newsletter / CTA */}
           <div className="space-y-10">
             <h4 className="text-xs font-black text-white uppercase tracking-[0.4em] italic mb-8">Service Status</h4>
-            <div className="p-8 glass rounded-[2.5rem] border-primary/20 bg-primary/5 space-y-6">
+            <div className="p-6 sm:p-8 glass rounded-[2rem] sm:rounded-[2.5rem] border-primary/20 bg-primary/5 space-y-6">
                <div className="flex items-center gap-4">
                   <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_#22c55e]" />
                   <span className="text-[10px] font-black text-white uppercase tracking-widest">Units Available Now</span>

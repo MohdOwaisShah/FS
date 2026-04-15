@@ -20,14 +20,14 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen pt-40 pb-24 overflow-hidden bg-slate-950 font-sans flex items-center bg-gradient-sapphire">
+    <section className="relative min-h-screen pt-32 sm:pt-40 pb-16 sm:pb-24 overflow-hidden bg-slate-950 font-sans flex items-center bg-gradient-sapphire">
       {/* Decorative Gradients */}
       <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-primary/20 blur-[130px] rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-[700px] h-[700px] bg-secondary/15 blur-[130px] rounded-full translate-x-1/4 translate-y-1/4 pointer-events-none" />
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.05] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           
           {/* Left Content */}
           <div className="lg:col-span-7 space-y-12">
@@ -55,7 +55,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1, duration: 0.8 }}
-                className="text-6xl md:text-[7.5rem] font-black text-white font-display leading-[0.85] uppercase tracking-tighter"
+                className="text-4xl sm:text-6xl md:text-[7.5rem] font-black text-white font-display leading-[0.85] uppercase tracking-tighter"
               >
                 Laptop Fixed. <br />
                 <span className="text-gradient-brand text-glow">At Your Door.</span>
@@ -65,7 +65,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
-                className="text-xl md:text-2xl text-slate-400 max-w-xl font-medium leading-relaxed italic border-l-2 border-primary/30 pl-8"
+                className="text-lg md:text-2xl text-slate-400 max-w-xl font-medium leading-relaxed italic border-l-2 border-primary/30 pl-6 sm:pl-8"
               >
                 Mumbai & Thane&apos;s elite doorstep repair service. We pick it up, diagnose it for free, and bring it back — perfected.
               </motion.p>
@@ -79,7 +79,7 @@ export default function Hero() {
             >
               <a 
                 href="#booking" 
-                className="w-full sm:w-auto bg-primary text-white px-12 py-6 rounded-[2rem] text-sm font-black uppercase tracking-[0.2em] shadow-glow hover:shadow-glow-lg hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-4 group/btn"
+                className="w-full sm:w-auto bg-primary text-white px-8 sm:px-12 py-5 sm:py-6 rounded-[1.5rem] sm:rounded-[2rem] text-xs sm:text-sm font-black uppercase tracking-[0.2em] shadow-glow hover:shadow-glow-lg hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-4 group/btn"
               >
                 Book Free Pickup
                 <Zap className="w-4 h-4 fill-white group-hover:animate-bounce" />
@@ -99,7 +99,7 @@ export default function Hero() {
                initial={{ opacity: 0 }}
                animate={{ opacity: 1 }}
                transition={{ delay: 0.5 }}
-               className="pt-12 grid grid-cols-2 md:grid-cols-3 gap-10 border-t border-slate-900"
+               className="pt-12 grid grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 border-t border-slate-900"
             >
               {[
                 { icon: <ShieldCheck />, label: 'Genuine Parts', sub: 'with Warranty' },
@@ -125,7 +125,7 @@ export default function Hero() {
               initial={{ opacity: 0, rotateY: -10, x: 20 }}
               animate={{ opacity: 1, rotateY: 0, x: 0 }}
               transition={{ delay: 0.2, duration: 1 }}
-              className="relative z-10 glass rounded-[3.5rem] p-12 shadow-glow-lg border-primary/20 bg-slate-900/40"
+              className="relative z-10 glass rounded-[2rem] sm:rounded-[3.5rem] p-6 sm:p-12 shadow-glow-lg border-primary/20 bg-slate-900/40"
             >
               <div className="absolute -top-16 -right-16 w-40 h-40 bg-primary/10 blur-[60px] rounded-full pointer-events-none" />
               
@@ -167,13 +167,13 @@ export default function Hero() {
               </div>
 
               <div className="grid grid-cols-2 gap-6">
-                <div className="p-8 glass-light rounded-[2rem] border-primary/10 flex flex-col items-center justify-center text-center space-y-2 group/stat hover:border-primary/40 transition-all">
-                   <span className="text-4xl font-black text-white font-display uppercase tracking-tighter transition-all group-hover/stat:scale-110 group-hover/stat:text-primary">14</span>
-                   <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest">Active Units</span>
+                <div className="p-4 sm:p-8 glass-light rounded-2xl sm:rounded-[2rem] border-primary/10 flex flex-col items-center justify-center text-center space-y-2 group/stat hover:border-primary/40 transition-all">
+                   <span className="text-2xl sm:text-4xl font-black text-white font-display uppercase tracking-tighter transition-all group-hover/stat:scale-110 group-hover/stat:text-primary">14</span>
+                   <span className="text-[8px] sm:text-[9px] font-black text-slate-500 uppercase tracking-widest">Active Units</span>
                 </div>
-                <div className="p-8 glass-light rounded-[2rem] border-primary/10 flex flex-col items-center justify-center text-center space-y-2 group/stat hover:border-primary/40 transition-all">
-                   <span className="text-4xl font-black text-accent font-display uppercase tracking-tighter transition-all group-hover/stat:scale-110">9.2m</span>
-                   <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest">Avg Response</span>
+                <div className="p-4 sm:p-8 glass-light rounded-2xl sm:rounded-[2rem] border-primary/10 flex flex-col items-center justify-center text-center space-y-2 group/stat hover:border-primary/40 transition-all">
+                   <span className="text-2xl sm:text-4xl font-black text-accent font-display uppercase tracking-tighter transition-all group-hover/stat:scale-110">9.2m</span>
+                   <span className="text-[8px] sm:text-[9px] font-black text-slate-500 uppercase tracking-widest">Avg Response</span>
                 </div>
               </div>
 

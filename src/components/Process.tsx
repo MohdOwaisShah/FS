@@ -45,11 +45,11 @@ export default function Process() {
   ];
 
   return (
-    <section id="how-it-works" className="py-40 bg-slate-950 font-sans relative">
+    <section id="how-it-works" className="py-20 sm:py-40 bg-slate-950 font-sans relative">
       <div className="absolute top-1/2 left-0 w-80 h-80 bg-primary/10 blur-[130px] rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="flex flex-col items-center text-center mb-28 space-y-6">
+        <div className="flex flex-col items-center text-center mb-12 sm:mb-28 space-y-6">
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -62,7 +62,7 @@ export default function Process() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-[5.5rem] font-black text-white font-display uppercase tracking-tight leading-none italic"
+            className="text-4xl sm:text-5xl md:text-[5.5rem] font-black text-white font-display uppercase tracking-tight leading-none italic"
           >
             How We <span className="text-gradient-brand">Win.</span>
           </motion.h2>
@@ -77,7 +77,7 @@ export default function Process() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 sm:gap-12 relative">
           {/* Animated path line (Desktop) */}
           <div className="hidden md:block absolute top-[60px] left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
           
@@ -118,7 +118,7 @@ export default function Process() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="mt-32 p-10 glass rounded-[3.5rem] border-primary/20 bg-primary/5 flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left shadow-glow-lg overflow-hidden relative"
+          className="mt-16 sm:mt-32 p-6 sm:p-10 glass rounded-[2rem] sm:rounded-[3.5rem] border-primary/20 bg-primary/5 flex flex-col md:flex-row items-center justify-between gap-8 sm:gap-12 text-center md:text-left shadow-glow-lg overflow-hidden relative"
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[80px] rounded-full pointer-events-none" />
           <div className="flex items-center gap-8 relative z-10">
@@ -130,7 +130,7 @@ export default function Process() {
               <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mt-2">All devices are insured during transit.</p>
             </div>
           </div>
-          <Link href="#booking" className="whitespace-nowrap px-12 py-6 bg-white text-slate-950 font-black uppercase tracking-widest rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-xl hover:shadow-white/10 relative z-10">
+          <Link href="#booking" className="whitespace-nowrap px-8 sm:px-12 py-5 sm:py-6 bg-white text-slate-950 font-black uppercase tracking-widest rounded-xl sm:rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-xl hover:shadow-white/10 relative z-10 w-full sm:w-auto text-center">
             Get Started Now
           </Link>
         </motion.div>
